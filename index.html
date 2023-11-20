@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AI.BIZ</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custome.css" rel="stylesheet" />
+    <link href="css/starrating/star-rating-svg.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <div class="home-page">
+        <div class="outerwapper">
+
+            <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-custome">
+                <div class="container px-4 px-lg-5    my-2">
+                    <a class="navbar-brand" href="index.html"><img src="./assets/img/LOGO.png" class="brandName"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mx-auto pt-2 ">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">
+                                    Favourites</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Discover</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Submit</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Community</a>
+                                <!---ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </!ul--->
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="btn btn-sm nav-login-btn-mobile">Login</a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-sm nav-login-btn">Login</a>
+
+
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="heder-block">
+                <div class="container px-4 px-lg-5 my-5">
+
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+
+                        <div class="header-user mx-2">
+                            <i class="fa fa-users mr-1" aria-hidden="true" style="color:#497696"></i>
+                            <span class="font-weight-bold">233K+</span>
+                        </div>
+
+                        <div class="header-popularity mx-2">
+                            <i class="fa mr-1 fa-bookmark" aria-hidden="true" style="color:#497696"></i>
+                            <span class="font-weight-bold">150K+</span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center ">
+                        <h1 class="fw-bolder">AI.BUZZ</h1>
+                        <p class="lead fw-normal mb-0">World's Largest AI Tools Directory, Updated Daily</p>
+                    </div>
+
+                    <div class="search-filter">
+                        <div class="search__container">
+                            <input class="search__input" type="text" class="shadow-sm" placeholder="Search">
+                        </div>
+                    </div>
+
+                    <div class="search-option mt-4 d-flex justify-content-center align-items-center w-100">
+                        <button type="button" class="btn  mx-2 rounded-button lined-button" data-toggle="modal"
+                            data-target="#exampleModal">
+                            Filters <i class="fa fa-filter mx-2" aria-hidden="true"></i>
+                        </button>
+
+
+                        <div class="dropdown mx-2 ">
+                            <button class="btn  dropdown-toggle rounded-button lined-button" type="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Sort By
+                            </button>
+                            <div class="dropdown-menu ">
+                                <a class="dropdown-item" href="#"><i class="fa mr-2 fa-check-circle"
+                                        aria-hidden="true"></i> Verfied</a>
+                                <a class="dropdown-item" href="#"><i class="fa mr-2 fa-clock-o" aria-hidden="true"></i>
+                                    New</a>
+                                <a class="dropdown-item" href="#"><i class="fa mr-2 fa-bookmark" aria-hidden="true"></i>
+                                    Popular</a>
+                            </div>
+                        </div>
+
+
+                        <!---MODAL OPEN-->
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="staticBackdropLabel">Select Filters to Apply</h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                        <h3 class=" pb-1">Pricing</h3>
+                                        <div class="d-flex justify-content-between flex-wrap filter-list">
+                                            <div class="form-check form-check-inline col-5 mb-2 jus">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option1">
+                                                <i class="fa fa-check-circle mx-2" aria-hidden="true"></i>
+                                                <label class="form-check-label" for="inlineCheckbox1">Free</label>
+                                            </div>
+
+
+                                            <div class="form-check form-check-inline col-5 mb-2">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                    value="option2">
+                                                <i class="fa fa-unlock-alt mx-2" aria-hidden="true"></i>
+                                                <label class="form-check-label" for="inlineCheckbox2">Freemium</label>
+                                            </div>
+
+
+
+                                            <div class="form-check form-check-inline col-5 mb-2">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                    value="option2">
+                                                <i class="fa fa-unlock-alt mx-2" aria-hidden="true"></i>
+                                                <label class="form-check-label" for="inlineCheckbox2">Free Trial</label>
+                                            </div>
+
+
+                                            <div class="form-check form-check-inline col-5 mb-2">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                    value="option2">
+                                                <i class="fa fa-usd mx-2" aria-hidden="true"></i>
+                                                <label class="form-check-label" for="inlineCheckbox2">Paid
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check form-check-inline col-5 mb-2">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                    value="option2">
+                                                <i class="fa fa-usd mx-2" aria-hidden="true"></i>
+                                                <label class="form-check-label" for="inlineCheckbox2">Contact
+                                                    Pricing</label>
+                                            </div>
+
+
+                                            <div class="form-check form-check-inline col-5 mb-2">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                    value="option2">
+                                                <i class="fa fa-tag mx-2" mx-2" aria-hidden="true"></i>
+                                                <label class="form-check-label" for="inlineCheckbox2">Deals</label>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="mt-2">
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class=" row modal-footer d-flex justify-content-center">
+                                        <button type="button" class="btn col-5 applay-clear-filter"
+                                            data-dismiss="modal">Clear</button>
+                                        <button type="button" class="btn  col-5   apply-filter-button">Apply
+                                            Filters</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---MODAL CLOSE---->
+                    </div>
+                </div>
+            </header>
+
+            <section class="py-5 main-section">
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <h3 class="text-center mb-3">Categories</h3>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("./data/Category.json", function (data) {
+                                        var categorylist = '';
+                                        $.each(data.Category_list, function (key, value) {
+                                            categorylist += ` <a href="javascript:valid(0)" class="mx-2 category-buttons">` + value.Category + `</a>    
+                                                `;
+                                        });
+                                        $('#category-block').html(categorylist);
+                                    }).fail(function () {
+                                        document.write("An error has occurred.");
+                                    });
+                                });
+                            </script>
+
+                            <div id="category-block"
+                                class="d-flex  flex-wrap justify-content-center align-items-center ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div class="row mx-0" id="aidata">
+                        <script src="https://code.jquery.com/jquery-3.6.3.js"
+                            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+                            crossorigin="anonymous"></script>
+                        <script>
+                            $(document).ready(function () {
+                                $.getJSON("./data/AITools.json", function (data) {
+                                    var output = '';
+                                    $.each(data.Parameters, function (key, value) {
+                                        output += `
+                                        <div class="col-lg-3 col-md-6 col-6 p-2 mb-2">
+                                        <div class="card sample1" >
+                                            <div class="home-banner">
+                                                <img class="img-fluid" src="https://pixel4inch.github.io/aibuzz/assets/AI_Tools/`+ value.homepagescreenshot + `"/>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title"> `+ value.NAME + `</h5>
+                                                </div>
+
+                                                <div class="d-flex">
+                                                        <div class="d-flex price-box flex-grow w-100">
+                                                            <p class="prise"> `+ value.dollorsymble + `</p>
+                                                            <p class="prise_value"> `+ value.startpricemonth + `</p>
+                                                        </div>
+
+                                                        <div class="d-flex iconlinks flex-grow w-100 justify-content-end">
+                                                            <i class="lni lni-mobile"></i>
+                                                            <i class="fa fa-file-text mx-1" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart-o mx-1" aria-hidden="true"></i>
+                                                            <i class="fa-solid fa-link"></i>
+                                                        </div>
+                                                        <div class="ranking-4" data-rating="5"></div>
+                                                 </div>
+
+                                               
+
+                                            </div>
+                                        </div>
+                                      </div>
+                                   
+                                  
+                                                `;
+                                    });
+                                    $('#aidata').html(output);
+                                }).fail(function () {
+                                    document.write("An error has occurred.");
+                                });
+                            });
+                        </script>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- 
+                                               
+                       
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+        </div>
+        </section>
+
+        <div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-2 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white" style="font-size:12.5px">©
+                    <script language="JavaScript">document.write(new Date().getFullYear());</script> Ai.Biz All
+                    Rights Reserved.</small>
+                </p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/starrating/jquery.star-rating-svg.js"></script>
+
+        <!-- STAR RATING -->
+        <script type="text/javascript">
+            $(".ranking-4").starRating({
+                totalStars: 5,
+                starShape: 'rounded',
+                starSize: 40,
+                emptyColor: 'lightgray',
+                hoverColor: 'salmon',
+                activeColor: 'crimson',
+                useGradient: false
+            });
+
+        </script>
+
+    </div>
+    </div>
+</body>
+
+
+</html>

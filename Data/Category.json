@@ -1,0 +1,112 @@
+{
+"Category_list":[
+ {
+  "Id": 1,
+  "Category": "AI Detection "
+ },
+ {
+  "Id": 2,
+  "Category": "Advertising "
+ },
+ {
+  "Id": 3,
+  "Category": "Audio "
+ },
+ {
+  "Id": 4,
+  "Category": "Automation "
+ },
+ {
+  "Id": 5,
+  "Category": "Business Intelligence "
+ },
+ {
+  "Id": 6,
+  "Category": "Chat "
+ },
+ {
+  "Id": 7,
+  "Category": "Coding "
+ },
+ {
+  "Id": 8,
+  "Category": "Copywriting "
+ },
+ {
+  "Id": 9,
+  "Category": "Education "
+ },
+ {
+  "Id": 10,
+  "Category": "Gaming "
+ },
+ {
+  "Id": 11,
+  "Category": "Generative Art "
+ },
+ {
+  "Id": 12,
+  "Category": "Generative Video "
+ },
+ {
+  "Id": 13,
+  "Category": "Graphic Design "
+ },
+ {
+  "Id": 14,
+  "Category": "Image Editing "
+ },
+ {
+  "Id": 15,
+  "Category": "Marketing "
+ },
+ {
+  "Id": 16,
+  "Category": "Music "
+ },
+ {
+  "Id": 17,
+  "Category": "Podcasting "
+ },
+ {
+  "Id": 18,
+  "Category": "Productivity "
+ },
+ {
+  "Id": 19,
+  "Category": "Recruitment "
+ },
+ {
+  "Id": 20,
+  "Category": "SEO "
+ },
+ {
+  "Id": 21,
+  "Category": "Social Media "
+ },
+ {
+  "Id": 22,
+  "Category": "Text-to-Video "
+ },
+ {
+  "Id": 23,
+  "Category": "Text-to-Voice "
+ },
+ {
+  "Id": 24,
+  "Category": "Transcription "
+ },
+ {
+  "Id": 25,
+  "Category": "Translation "
+ },
+ {
+  "Id": 26,
+  "Category": "Video Editing "
+ },
+ {
+  "Id": 27,
+  "Category": "Video Generation"
+ }
+]
+}

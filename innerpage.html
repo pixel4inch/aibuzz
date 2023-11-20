@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AI.BIZ</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custome.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+<script src="https://releases.jquery.com/git/jquery-git.js"></script>
+
+<script src="./js/perms.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js"
+integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+    $.getJSON("./data/AI_Tools.json", function (data) {
+      var eventid = GetParameterValues("EventId");
+      var banner = '';
+      $.each(data.Parameters, function (key, value) {
+        if (value.id == eventid) {
+                 banner += `
+                    <div class="header-banner">
+                        <div class="container">
+
+                            <div class="my-2">
+                                <div class="image-block d-flex justify-content-center align-items-center">
+                                   <img src="`+ value.LOGO + `" style=" width:135px; height:auto; margin:0 auto"/>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h3 class="fw-bolder innerpage-title">`+ value.NAME + `</h3>
+                                </div>
+
+                            </div>
+                            <hr/>
+                            <a href=" ` + value.WEBSITE_URL +`" target="_blank">
+                                <div class="home-screen shadow border p-5 my-2" style="background-image: url('` + value.HOME_PAGE_SCREENSHOT + `'); height: 450px; background-size:; background-repeat: no-repeat;">
+                                </div>
+                            </a>
+
+                            <p class="text-left inner-page-discription ">`+ value.DESCRIPTION + `</p>
+
+                            <div class="row">
+
+                                
+
+                                <div class="col-8 p-2 border-right">
+                                    <h4 class="font-weight-bold text-left mt-4 mb-2 inner-subheader ">KEYWORDS</h4> 
+                                    <p class="text-left inner-page-discription mt-0">`+ value.KEYWORDS + `</p>
+                                    
+                                    <hr/>
+                                    <h4 class="font-weight-bold text-left mt-3 mb-2 inner-subheader ">COMPETITORS</h4> 
+                                    <p class="text-left inner-page-discription mt-0">`+ value.COMPETITORS + `</p>
+
+                                    <hr/>
+                                    <h4 class="font-weight-bold text-left mt-3 mb-2 inner-subheader">USE CASES</h4> 
+                                    <p class="text-left inner-page-discription mt-0">`+ value.USECASES + `</p>
+
+                                </div>
+
+                                <div class="col-4 h-100  p-2" >
+                                    <div class="col-12 mx-auto 0 text-left  side-banner"  >
+                                       <h5 class="mb-4"><i class="fa fa-check-circle mr-2" aria-hidden="true"></i> Category: <span> ` + value.CATEGORY +`</span></h5>
+                                       <h5 class="mb-4"><i class="fa fa-usd mr-2" aria-hidden="true"></i> Price:  <span>` + value.PRICE +` </span> </h5>
+                                       <h5 class="mb-4"><i class="fa fa-server mr-2" aria-hidden="true"></i>  Platforms: <span> ` + value.PLATFORMS +`</span> </h5>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            
+
+                        </div>
+                </div>
+                 `;
+        }
+      });
+      $('#pagebanner-block').html(banner);
+  
+    }).fail(function () {
+      document.write("An error has occurred.");
+    });
+  }); 
+</script>
+
+
+
+
+
+</head>
+
+<body>
+    <!-- Navigation-->
+   
+      
+
+
+
+
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custome bg-white shadow">
+            <div class="container ">
+                <a class="navbar-brand" href="index.html"><img src="./assets/img/LOGO.png" class="brandName"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mx-auto pt-2 ">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#!">
+                            Favourites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Discover</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " id="navbarDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Submit</a>
+                            
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " id="navbarDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Community</a>
+                        <!---ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </!ul--->
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="btn btn-sm nav-login-btn-mobile">Login</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                
+                <a href="#" class="btn btn-sm nav-login-btn">Login</a>
+
+
+            </div>
+        </nav>
+        <!-- Header-->
+        
+            <div id="pagebanner-block">
+
+            </div>
+
+
+
+        <!-- Section-->
+        <section class="py-5 main-section">
+
+
+          
+
+
+
+          
+        </section>
+
+        
+        <!-- Footer-->
+        <footer class="py-2 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white" style="font-size:12.5px">© <script language="JavaScript">document.write(new Date().getFullYear());</script> Ai.Biz All Rights Reserved.</small></p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        </div>
+   
+</body>
+
+</html>
